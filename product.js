@@ -17,13 +17,14 @@ closenav.addEventListener("click",function()
 
 //Product search funcationally//
 
-var productcontainer = document.getElementById("producat-container")
+var productcontainer = document.getElementById("product-container")
 var search= document.getElementById("search")
 var productlist = productcontainer.querySelectorAll("div")
     
-search.addEventListener("keyup",function(){
+search.addEventListener("keyup",function(event){
 
-    var enteredvalue = event.target.value.toUppercase()
+   var enteredvalue = event.target.value.toUpperCase()
+
 
     for(count=0; count<productlist.length; count=count+1)
     {
